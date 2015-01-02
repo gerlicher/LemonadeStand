@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2015 Ansgar Gerlicher. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="LemonadeStand" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX">
+                    <rect key="frame" x="20" y="36" width="441" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="B00-lz-q4D"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="70"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="B00-lz-q4D"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular">
+                        <mask key="constraints">
+                            <include reference="B00-lz-q4D"/>
+                        </mask>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="startscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Og7-za-MyT">
+                    <rect key="frame" x="88" y="100" width="305" height="314"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Og7-za-MyT" firstAttribute="leading" secondItem="kId-c2-rCX" secondAttribute="leading" id="4A9-aR-FcJ"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="trailing" secondItem="Og7-za-MyT" secondAttribute="trailing" id="JxM-t3-bEz"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="43" id="KfJ-pE-BU1"/>
+                <constraint firstItem="Og7-za-MyT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="219" id="ONi-AL-7eW"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="26" id="dGJ-5G-IZs"/>
+                <constraint firstItem="kId-c2-rCX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="xLu-DL-nbi"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="Og7-za-MyT" secondAttribute="leading" id="xtt-lg-irg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="JxM-t3-bEz"/>
+                    <exclude reference="KfJ-pE-BU1"/>
+                    <exclude reference="xLu-DL-nbi"/>
+                    <exclude reference="4A9-aR-FcJ"/>
+                    <exclude reference="ONi-AL-7eW"/>
+                    <exclude reference="dGJ-5G-IZs"/>
+                    <exclude reference="xtt-lg-irg"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="constraints">
+                    <include reference="JxM-t3-bEz"/>
+                    <include reference="KfJ-pE-BU1"/>
+                    <include reference="xLu-DL-nbi"/>
+                    <include reference="4A9-aR-FcJ"/>
+                    <include reference="ONi-AL-7eW"/>
+                    <include reference="dGJ-5G-IZs"/>
+                    <include reference="xtt-lg-irg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="387" y="420"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="startscreen" width="250" height="250"/>
+    </resources>
+</document>
