@@ -1,0 +1,4 @@
+LemonadeStand
+=============
+
+Example Exercise Project
